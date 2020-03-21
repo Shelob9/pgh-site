@@ -16,7 +16,7 @@ const TestingSite = props => {
 					<h2>
 						<Link
 							to={path}
-							className="text-2xl text-indigo-700 hover:text-indogo-600 hover:underline"
+							className="text-2xl text-black-700 hover:text-indogo-600 hover:underline"
 						>
 							{title}
 						</Link>
@@ -44,7 +44,7 @@ const TestingSites = ({ data }) => {
 
 			<div className="min-h-screen pt-24 sm:pt-32 md:pt-64 -mt-12 sm:-mt-16 md:-mt-24 lg:-mt-28 mb-20 bg-size-5/6 md:bg-size-4/5 lg:bg-size-2/3 bg-right-top bg-no-repeat flex flex-col items-center">
 				<div className="container w-3/4 md:w-1/2 mt-20 font-serif font-hairline self-start">
-					<h1 className="text-4xl md:text-5xl text-indigo-700 px-2">
+					<h1 className="text-4xl md:text-5xl text-black-700 px-2">
 						Testing Sites
 					</h1>
 				</div>

@@ -1,8 +1,8 @@
 module.exports = {
 	siteMetadata: {
-		title: `Gatsby Tailwind Serif`,
-		description: `Gatsby starter styled with Tailwind`,
-		author: `@windedge`
+		title: `Pittsburgh COVID-19`,
+		description: `Testing sites and other ways to help prevent the spread of the novel coronavirus in Western, PA`,
+		author: `@josh412`
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
@@ -13,7 +13,7 @@ module.exports = {
 				short_name: `serif`,
 				start_url: `/`,
 				background_color: `#ffffff`,
-				theme_color: `#4dc0b5`,
+				theme_color: `#ffb81c`,
 				display: `minimal-ui`,
 				icon: `static/favicon.png`
 			}
