@@ -4,9 +4,11 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import "../css/markdown-github.css";
-
+import Location from "../components/Location";
 export default ({ data }) => {
 	const { testingSite } = data;
+	const lat = 40.4875553;
+	const lng = -79.9197436;
 	const title = testingSite.frontmatter.title;
 	return (
 		<Layout headerClass="relative bg-white" bodyClass="px-0 md:px-0 lg:px-0">
@@ -18,6 +20,9 @@ export default ({ data }) => {
 						<h2 className="text-5xl text-indigo-700">{title}</h2>
 						<div className="markdown-body">
 							<div dangerouslySetInnerHTML={{ __html: testingSite.html }}></div>
+						</div>
+						<div>
+							<Location lat={lat} lng={lng} />
 						</div>
 					</div>
 				</div>
