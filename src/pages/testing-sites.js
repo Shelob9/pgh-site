@@ -2,17 +2,32 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-
-const TestingSite = ({ title, url, children }) => {
+import LocationMap from "../components/LocationMap";
+import LocationCard from "../components/LocationCard";
+const TestingSite = props => {
+	const { title, path, children, lat, lng } = props;
 	return (
-		<div className="w-full sm:w-1/2 md:w-1/3 p-2">
-			<Link
-				to={url}
-				className="text-2xl text-indigo-700 hover:text-indogo-600 hover:underline"
-			>
-				{title}
-			</Link>
-			<p>{children}</p>
+		<div className="min-h-500" style={{ height: "500px" }}>
+			<div className="flex mb-4">
+				<div className="w-1/2 h-12">
+					<h2>
+						<Link
+							to={path}
+							className="text-2xl text-indigo-700 hover:text-indogo-600 hover:underline"
+						>
+							{title}
+						</Link>
+					</h2>
+					<div>{children}</div>
+					<LocationCard {...props} />
+					<Link to={path} className="hover:text-indogo-600 hover:underline">
+						More Information
+					</Link>
+				</div>
+				<div className="w-1/2 bg-gray-500 h-12">
+					<LocationMap {...{ lat, lng }} width="500px" />
+				</div>
+			</div>
 		</div>
 	);
 };
@@ -33,12 +48,8 @@ const TestingSites = ({ data }) => {
 
 				<div className="flex flex-wrap mt-10 md:mt-20">
 					{services.map(({ node }) => (
-						<TestingSite
-							title={node.frontmatter.title}
-							url={node.frontmatter.path}
-							key={node.frontmatter.path}
-						>
-							{node.excerpt}
+						<TestingSite key={node.frontmatter.path} {...node.frontmatter}>
+							<div>{node.excerpt}</div>
 						</TestingSite>
 					))}
 				</div>
@@ -56,8 +67,18 @@ export const query = graphql`
 			edges {
 				node {
 					frontmatter {
-						title
 						path
+						title
+						address_1
+						city
+						state
+						zip
+						lng
+						lat
+						hours
+						location_name
+						organization_name
+						link
 					}
 					excerpt
 				}

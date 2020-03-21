@@ -1,16 +1,18 @@
 import React from "react";
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
-const mapStyles = {
-	width: "80%",
-	height: "500px",
-	position: "fixed"
-};
 
-const Location = props => {
-	const { lat, lng, markers: locations } = props;
+const LocationMap = props => {
+	const { location_name, lat, lng, markers: locations } = props;
+
+	const mapStyles = {
+		width: props.width ? props.width : "80%",
+		height: props.height ? props.height : "500px",
+		position: "fixed"
+	};
+
 	return (
-		<div class="min-h-500" style={{ height: "500px" }}>
-			<div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+		<div className="min-h-500" style={{ height: "500px" }}>
+			<div className="font-bold text-xl mb-2">{location_name}</div>
 			<Map
 				google={props.google}
 				zoom={10}
@@ -29,4 +31,4 @@ const Location = props => {
 
 export default GoogleApiWrapper({
 	apiKey: "AIzaSyCbDJEea4g-6vMJ3ecKG7G6R8cA7mH1das"
-})(Location);
+})(LocationMap);

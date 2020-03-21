@@ -4,22 +4,8 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import "../css/markdown-github.css";
-import Location from "../components/Location";
-
-const LocationCard = ({ address_1, city, state, zip, location_name }) => (
-	<div className="px-3 py-1 text-md font-bold text-gray-700 mr-2">
-		<h2 className={"font-semibold"}>Testing Location</h2>
-		<div className="px-6 py-4">
-			<div className="bg-gray-100 px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-				<p className={"font-semibold"}>{location_name}</p>
-				<p>{address_1}</p>
-				<p>
-					{city} {state} {zip}
-				</p>
-			</div>
-		</div>
-	</div>
-);
+import LocationMap from "../components/LocationMap";
+import LocationCard from "../components/LocationCard";
 
 const MoreInfoCard = ({ link, organization_name }) => (
 	<div className="px-3 py-1 text-md font-bold text-gray-700 mr-2">
@@ -34,7 +20,7 @@ const MoreInfoCard = ({ link, organization_name }) => (
 export default ({ data }) => {
 	const { testingSite } = data;
 
-	const { title, lat, lng } = testingSite.frontmatter;
+	const { title, lat, lng, location_name } = testingSite.frontmatter;
 	return (
 		<Layout
 			headerclassName="relative bg-white"
@@ -52,7 +38,7 @@ export default ({ data }) => {
 						<MoreInfoCard {...testingSite.frontmatter} />
 						<LocationCard {...testingSite.frontmatter} />
 						<div>
-							<Location lat={lat} lng={lng} />
+							<LocationMap lat={lat} lng={lng} location_name={location_name} />
 						</div>
 					</div>
 				</div>

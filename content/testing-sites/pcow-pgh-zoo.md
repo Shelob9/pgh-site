@@ -1,5 +1,5 @@
 ---
-path: "/testings-sites/covid-19-testing-pittsburgh-zoo"
+path: "/testing-sites/covid-19-testing-pittsburgh-zoo"
 title: "Pittsburgh ZOO Covid-19 Testing"
 date: 2018-11-18T12:33:46+10:00
 draft: false
