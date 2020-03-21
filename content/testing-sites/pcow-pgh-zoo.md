@@ -1,8 +1,8 @@
 ---
-path: '/services/tax-preperation'
-title: 'Tax Preperation'
+path: "/testings-sites/covid-19-testing-pittsburgh-zoo"
+title: "Pittsburgh ZOO Covid-19 Testing: Central Outreach Wellness Center"
 date: 2018-11-18T12:33:46+10:00
-image: '/services/noun_1013177.png'
+image: "/cats/cat600.jpg"
 draft: false
 featured: true
 weight: 2
