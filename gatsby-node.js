@@ -7,7 +7,6 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
 						id
 						frontmatter {
 							path
-							image
 						}
 					}
 				}
@@ -16,10 +15,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
 	`);
 	const services = result.data.allMarkdownRemark.edges;
 	services.forEach(function({ node }) {
-		const {
-			path
-			//image
-		} = node.frontmatter;
+		const { path } = node.frontmatter;
 		createPage({
 			path,
 			component: require.resolve("./src/templates/testing-site.js"),

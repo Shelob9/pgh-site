@@ -5,22 +5,52 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import "../css/markdown-github.css";
 import Location from "../components/Location";
+
+const LocationCard = ({ address_1, city, state, zip, location_name }) => (
+	<div className="px-3 py-1 text-md font-bold text-gray-700 mr-2">
+		<h2 className={"font-semibold"}>Testing Location</h2>
+		<div className="px-6 py-4">
+			<div className="bg-gray-100 px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+				<p className={"font-semibold"}>{location_name}</p>
+				<p>{address_1}</p>
+				<p>
+					{city} {state} {zip}
+				</p>
+			</div>
+		</div>
+	</div>
+);
+
+const MoreInfoCard = ({ link, organization_name }) => (
+	<div className="px-3 py-1 text-md font-bold text-gray-700 mr-2">
+		<h2 className={"font-semibold"}>More Information</h2>
+		<div className="px-6 py-4">
+			<div className="bg-gray-100 px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+				<a href={link}>{organization_name}</a>
+			</div>
+		</div>
+	</div>
+);
 export default ({ data }) => {
 	const { testingSite } = data;
-	const lat = 40.4875553;
-	const lng = -79.9197436;
-	const title = testingSite.frontmatter.title;
+
+	const { title, lat, lng } = testingSite.frontmatter;
 	return (
-		<Layout headerClass="relative bg-white" bodyClass="px-0 md:px-0 lg:px-0">
+		<Layout
+			headerclassName="relative bg-white"
+			bodyclassName="px-0 md:px-0 lg:px-0"
+		>
 			<SEO title={title} />
 
 			<div className="min-h-screen flex flex-col items-start bg-no-repeat bg-fixed bg-cover">
 				<div className="mt-56 bg-white w-full pb-16 mb-20 skew-y-5">
 					<div className="container mx-auto px-6 md:px-10 lg:px-24 pt-16 -skew-y-5">
-						<h2 className="text-5xl text-indigo-700">{title}</h2>
+						<h1 className="text-5xl text-indigo-700">{title}</h1>
 						<div className="markdown-body">
 							<div dangerouslySetInnerHTML={{ __html: testingSite.html }}></div>
 						</div>
+						<MoreInfoCard {...testingSite.frontmatter} />
+						<LocationCard {...testingSite.frontmatter} />
 						<div>
 							<Location lat={lat} lng={lng} />
 						</div>
@@ -36,8 +66,17 @@ export const query = graphql`
 		testingSite: markdownRemark(id: { eq: $id }) {
 			frontmatter {
 				path
-				image
 				title
+				address_1
+				city
+				state
+				zip
+				lng
+				lat
+				hours
+				location_name
+				organization_name
+				link
 			}
 			html
 		}

@@ -1,48 +1,24 @@
 ---
 path: "/testings-sites/covid-19-testing-pittsburgh-zoo"
-title: "Pittsburgh ZOO Covid-19 Testing: Central Outreach Wellness Center"
+title: "Pittsburgh ZOO Covid-19 Testing"
 date: 2018-11-18T12:33:46+10:00
-image: "/cats/cat600.jpg"
 draft: false
 featured: true
 weight: 2
+hours: 11:00 AM - 4:00 PM EST
+address_1: 7370 Baker St.
+city: Pittsburgh
+state: PA
+zip: 15206
+lat: 40.4875553
+lng: -79.919743
+location_name: Pittsbugh Zoo Parking Lot
+organization_name: Central Outreach Wellness Center
+link: https://www.centraloutreach.com/resources/covid-19-testing-sites
 ---
 
-Lorem markdownum **Achaica revolutaque amore**, penitus puppes nec furit,
-clipeus fatetur, mira inter accedere. Dedit dum raptoresque Oete dolorem
-Cretaeas enim [ipse pectora excusat](#in-poscat) candentibus fertur? Furtiva
-Orontes Erysicthona dona, est per Achille viridi draconis cultis mota milia.
+The [Central Outreach Wellness Center](https://www.centraloutreach.com/) will offer testing for COVID-19 in the Pittsburgh Zoo parking lot beginning March 23.
 
-- Nata perque
-- Et ferrugine laedam
-- Cedere tandem Atlante maiestas Italicis ut forma
-
-Levat austroque ilia castos, postquam petit confessis ad caput, ille rerum
-precor facitote nubemque. Potuit Celadon Martem?
-
-1. Imagine Assaracus victori petet femina mea haustos
-2. Sicaniam quibus agro magni
-3. In utque Troica pedum caelestia hunc tempto
-4. Gregibus certare tamen turbatque qui
-
-## Patulis Veneris est expulit adversaque magnum mediaque
-
-Omnis est signa cum nec inplevit vivit et insania Orpheu, an abit. Nimbi
-subversaque et micant suumque, tibi ipse; sed. **Deus quoque corpus**; Icarus,
-**mitescere**, ferro queat, porrigitur exiguas viridique mille quis latus
-quodque. Non una genuisse ullis efficiet ad corpore nunc mentesque praestant?
-
-_Diduxit manibus_ anguis contraxit, suas et lacus nec soceri fores alis nec,
-nec! Data pater Perseu minanti animam operitur illa dolorem.
-
-Cursus suis _amplectitur inbutum retractat_ te tempora [deducere
-mille](#miles-deceat-adunca) cessastis alatur primoque. Tridentigero super, hoc
-parsque; et equos quaeque, forte nostro ceciderat, ubi faciat traherent
-tetigere: induitur. Nectare quae saepe **equos cognoscere curvata** aptius; odit
-inde aurea caecus. Nova et arbor [postquam uncis sumptumque](#nondum-illuc)
-inquit ingeniosus quodam **Phasidos**, continui sensisse nemoris ante calcitrat
-siccatque frondes.
-
-Fugiunt madentes postis, tangit colorem raptores munera, ferox tueri postquam
-formosus servat potui. Luce ebur, pulcherrimus plus tradere! _Quam perque
-semper_?
+- COVID-19 Testing is available for those who present symptoms (dry cough/fever/shortness of breath).
+- Bring your photo ID and insurance card.
+- They are not turning anyone away that does not have insurance.
