@@ -17,9 +17,10 @@ lng: -80.284427
 location_name: Central Outreach Wellness Center
 organization_name: Central Outreach Wellness Center
 link: https://www.centraloutreach.com/resources/covid-19-testing-sites
+excerpt: The Central Outreach Wellness Center offers testing for COVID-19 in Aliquippa, PA.
 ---
 
-The [Central Outreach Wellness Center](https://www.centraloutreach.com/) offers testing for COVID-19 in AlAliquippa, PA,
+The [Central Outreach Wellness Center](https://www.centraloutreach.com/) offers testing for COVID-19 in Aliquippa, PA.
 
 - COVID-19 Testing is available for those who present symptoms (dry cough/fever/shortness of breath).
 - Bring your photo ID and insurance card.

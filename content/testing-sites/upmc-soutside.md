@@ -14,10 +14,9 @@ lng: -79.97
 location_name: Not Public
 organization_name: UPMC
 link: https://www.upmc.com/coronavirus#testing
+excerpt: UPMC offers by appointment only testing on Pittsburgh's South Side.
 ---
 
-The [Central Outreach Wellness Center](https://www.centraloutreach.com/) will offer testing for COVID-19 in the Pittsburgh Zoo parking lot beginning March 23.
+As of March 17, the Univeristy of Pittsburgh Medical Center, UPMC has testing for patients with symptoms consistent with COVID-19 in Pittsburgh’s South Side neighborhood.
 
-- COVID-19 Testing is available for those who present symptoms (dry cough/fever/shortness of breath).
-- Bring your photo ID and insurance card.
-- They are not turning anyone away that do not have insurance.
+The site is _not open to the general public_. Patients must have an approved referral.

@@ -16,6 +16,7 @@ lng: -79.919743
 location_name: Pittsbugh Zoo Parking Lot
 organization_name: Central Outreach Wellness Center
 link: https://www.centraloutreach.com/resources/covid-19-testing-sites
+excerpt: The Central Outreach Wellness Center will offer testing for COVID-19 in the Pittsburgh Zoo parking lot beginning March 23.
 ---
 
 The [Central Outreach Wellness Center](https://www.centraloutreach.com/) will offer testing for COVID-19 in the Pittsburgh Zoo parking lot beginning March 23.
