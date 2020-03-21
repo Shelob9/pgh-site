@@ -17,7 +17,7 @@ const MoreInfoCard = ({ link, organization_name }) => (
 		</div>
 	</div>
 );
-export default ({ data }) => {
+export default () => {
 	const title = "Help Others";
 	return (
 		<Layout
@@ -36,22 +36,3 @@ export default ({ data }) => {
 		</Layout>
 	);
 };
-
-export const query = graphql`
-	query HelpQuery {
-		allMarkdownRemark(
-			filter: { fileAbsolutePath: { regex: "/content/helps" } }
-			sort: { fields: [frontmatter___date], order: DESC }
-		) {
-			edges {
-				node {
-					frontmatter {
-						path
-						title
-					}
-					excerpt
-				}
-			}
-		}
-	}
-`;

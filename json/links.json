@@ -12,5 +12,20 @@
 			"title": "City of Pittsburgh COVID 19 Updates",
 			"link": "https://pittsburghpa.gov/mayor/covid-updates"
 		}
+	],
+	"diy": [
+		{
+			"title": "Masks",
+			"links": [
+				{
+					"title": "YouTube Tutorial: How To Make A Mask",
+					"link": "https://www.youtube.com/watch?v=-QpcnRv6r-o"
+				},
+				{
+					"title": "Calling All People Who Sew And Make: You Can Help Make Masks For 2020 Healthcare Worker PPE Shortage",
+					"link": "https://www.forbes.com/sites/tjmccue/2020/03/20/calling-all-people-who-sew-and-make-you-can-help-solve-2020-n95-type-mask-shortage/#473000834e41"
+				}
+			]
+		}
 	]
 }
