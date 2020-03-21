@@ -28,7 +28,7 @@ const LocationMap = props => {
 		</div>
 	);
 };
-
+console.log(process.env);
 export default GoogleApiWrapper({
 	apiKey: "AIzaSyCbDJEea4g-6vMJ3ecKG7G6R8cA7mH1das"
 })(LocationMap);

@@ -26,7 +26,7 @@ const Footer = ({ data, className, ...props }) => {
 							<a href="https://creativecommons.org/licenses/by-sa/4.0/">
 								CC BY-SA 4.0
 							</a>
-							. Please re-use.{" "}
+							| <a href={"https://github.com/Shelob9/pgh-site"}>Please reuse</a>
 						</li>
 					</ul>
 				</div>
