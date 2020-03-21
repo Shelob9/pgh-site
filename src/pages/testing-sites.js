@@ -7,7 +7,10 @@ import LocationCard from "../components/LocationCard";
 const TestingSite = props => {
 	const { title, path, children, lat, lng } = props;
 	return (
-		<div className="min-h-500" style={{ height: "500px" }}>
+		<div
+			className="min-h-600 bg-gray-100 rounded-lg border-gray-400 p-6"
+			style={{ height: "600px" }}
+		>
 			<div className="flex mb-4">
 				<div className="w-1/2 h-12">
 					<h2>

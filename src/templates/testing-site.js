@@ -28,7 +28,7 @@ export default ({ data }) => {
 		>
 			<SEO title={title} />
 
-			<div className="min-h-screen flex flex-col items-start bg-no-repeat bg-fixed bg-cover">
+			<div className="min-h-screen flex flex-col items-start bg-no-repeat bg-fixed bg-cover bg-gray-100 rounded-lg border-gray-400 p-6">
 				<div className="mt-56 bg-white w-full pb-16 mb-20 skew-y-5">
 					<div className="container mx-auto px-6 md:px-10 lg:px-24 pt-16 -skew-y-5">
 						<h1 className="text-5xl text-indigo-700">{title}</h1>
