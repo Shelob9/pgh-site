@@ -1,6 +1,6 @@
 module.exports = {
 	siteMetadata: {
-		title: `Pittsburgh COVID-19`,
+		title: `Pittsburgh Coronavirus (COVID-19)`,
 		description: `Testing sites and other ways to help prevent the spread of the novel coronavirus in Western, PA`,
 		author: `@josh412`
 	},
@@ -23,6 +23,13 @@ module.exports = {
 			options: {
 				path: `${__dirname}/content`,
 				name: "testing-sites"
+			}
+		},
+		`gatsby-transformer-json`,
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `./json`
 			}
 		},
 		"gatsby-transformer-remark",

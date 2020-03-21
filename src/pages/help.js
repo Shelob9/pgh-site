@@ -18,27 +18,18 @@ const MoreInfoCard = ({ link, organization_name }) => (
 	</div>
 );
 export default ({ data }) => {
-	const { testingSite } = data;
-	const { frontmatter } = testingSite;
-	const { title, lat, lng, location_name } = frontmatter;
+	const title = "Help Others";
 	return (
 		<Layout
 			headerclassName="relative bg-white"
 			bodyclassName="px-0 md:px-0 lg:px-0"
 		>
-			<SEO title={frontmatter.metaTitle ? frontmatter.metaTitle : title} />
+			<SEO title={title} />
+
 			<div className="min-h-screen flex flex-col items-start bg-no-repeat bg-fixed bg-cover bg-gray-100 rounded-lg border-gray-400 p-6">
 				<div className="mt-56 bg-white w-full pb-16 mb-20 skew-y-5">
 					<div className="container mx-auto px-6 md:px-10 lg:px-24 pt-16 -skew-y-5">
 						<h1 className="text-5xl text-black-700">{title}</h1>
-						<div className="markdown-body">
-							<div dangerouslySetInnerHTML={{ __html: testingSite.html }}></div>
-						</div>
-						<MoreInfoCard {...testingSite.frontmatter} />
-						<LocationCard {...testingSite.frontmatter} />
-						<div>
-							<LocationMap lat={lat} lng={lng} location_name={location_name} />
-						</div>
 					</div>
 				</div>
 			</div>
@@ -47,24 +38,20 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-	query($id: String) {
-		testingSite: markdownRemark(id: { eq: $id }) {
-			frontmatter {
-				path
-				title
-				address_1
-				city
-				state
-				zip
-				lng
-				lat
-				hours
-				location_name
-				organization_name
-				link
-				metaTitle
+	query HelpQuery {
+		allMarkdownRemark(
+			filter: { fileAbsolutePath: { regex: "/content/helps" } }
+			sort: { fields: [frontmatter___date], order: DESC }
+		) {
+			edges {
+				node {
+					frontmatter {
+						path
+						title
+					}
+					excerpt
+				}
 			}
-			html
 		}
 	}
 `;
